@@ -1,0 +1,105 @@
+body {
+    background-image: url("../Style/Newspapers1.jpg");
+    font-family: 'Sanchez', serif;
+
+
+}
+   
+
+.articleContainer {
+    background-color: lightskyblue;
+}
+
+#wrapper { 
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+    background-color: rgb(148, 173, 184);
+}
+
+#notes {
+    float: right;
+    width:60%;
+}
+
+.notes {
+    background-color: lightslategray;
+}
+
+textarea, input {
+    display: block;
+    width: 100%;
+    background-color: rgb(35, 57, 66);
+    color: white;
+}
+
+input {
+    height: 36px;
+    font-size: 24px;
+}
+
+textarea {
+    height: 220px;
+    font-size: 20px;
+    
+}
+
+.articleTitle {
+    color: white;
+    padding: 20px;
+}
+
+#titleinput {
+    color: rgb(35, 57, 66);
+    font-size: 14px;
+    font-family: 'Sanchez', serif;
+}
+
+.titleOfArticle {
+   color: rgb(35, 57, 66);
+   font-size: 33px;;
+
+}
+
+.title {
+    color: rgb(13, 90, 134);
+}
+
+.scrape {
+    text-align:center
+
+}
+
+.collapsible-body {
+    background-color: rgb(153, 152, 152);
+}
+
+.collapsible-header {
+    background-color: rgb(153, 152, 152)
+}
+
+.note-btn, .delete {
+   background-color: rgb(35, 57, 66);
+    font-family: 'Sanchez', serif;
+    color: white;
+}
+
+#view, #close, #savenote {
+    background-color: rgb(35, 57, 66);
+     font-family: 'Sanchez', serif;
+ }
+
+ #close {
+     float: right;
+ }
+
+ #bodyinput {
+     padding: 20px;
+     font-family: 'Sanchez', serif;
+
+ }
+
+ .noteBox {
+     padding: 10px;
+ }
