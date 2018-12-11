@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/slcdrew/News-Scraper"
   },
-  "author": "KSL NEWS SCRAPE",
+  "author":  "NEWS SCRAPE",
   "license": "ISC",
   "bugs": {
-    "url": "www.ksl.com"
+    "url": "https://github.com/slcdrew/News-Scraper"
   },
-  "homepage": "",
+  "homepage": "https://github.com/slcdrew/News-Scraper",
   "dependencies": {
     "axios": "^0.18.0",
     "cheerio": "^1.0.0-rc.2",
