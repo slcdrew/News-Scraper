@@ -1,12 +1,5 @@
-// Grab the articles as a JSON
-// $.getJSON("/articles", function(data) {
-//     //For each one
-//     for (var i=0; i < data.length; i++) {
-//         //Display the apropos info on the page
-//         $("#articles").append("<p data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + "https://www.ksl.com" + data[i].link + "<br />" + data[i].summary + "</p>");
-//     }
-// });
-//Handle scrape button
+
+//Handle scrape buttons
 $(".scrape").on("click", function () {
     $.ajax({
         method: "GET",
@@ -17,7 +10,7 @@ $(".scrape").on("click", function () {
     });
 });
 
-//Save article button -- not working
+//Save article button
 $(".save-btn").on("click", function() {
     var thisId = $(this).attr("data-id");
     $.ajax({
@@ -35,7 +28,6 @@ $(".note-btn").on("click", function() {
     //Save the id from the p tag
     var thisId = $(this).attr("data-id");
 
-    //Now make an ajax call for the Article
     $.ajax({
         method: "GET",
         url: "/articles/" + thisId
@@ -43,8 +35,6 @@ $(".note-btn").on("click", function() {
     //With that done, add the note information to the page
     .then(function(data) {
         console.log(data);
-        //The title of the article
-        // $(`.${thisId}notes`).append("<h5>" + data.title + "</h5>");
 
         //An input to enter a new title
         $(`.${thisId}notes`).append("<input id='titleinput' name='title' placeholder='Enter Note Title'>");
@@ -110,7 +100,6 @@ $(document).on("click", "#savenote", function() {
 });
 
 
-//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$44
 //When you click the savenote button
 $(document).on("click", "#view", function() {
     //grab the id associated with the article from the submit button
@@ -141,7 +130,6 @@ $(document).on("click", "#view", function() {
     $("#bodyinput").val("");
 });
 
-// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 //delete button
 $(document).on('click', '.delete', function (){
@@ -167,11 +155,6 @@ $(document).on("click", "#close", function () {
         location.reload();
     });
 });
-
-
-
-
-
 
 $(document).ready(function(){
     $('.collapsible').collapsible();

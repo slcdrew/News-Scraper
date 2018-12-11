@@ -1,8 +1,6 @@
 body {
     background-image: url("../Style/Newspapers1.jpg");
-    font-family: 'Sanchez', serif;
-
-
+    font-family: 'Courier New', Courier, monospace;
 }
    
 
@@ -42,7 +40,6 @@ input {
 textarea {
     height: 220px;
     font-size: 20px;
-    
 }
 
 .articleTitle {
@@ -53,7 +50,7 @@ textarea {
 #titleinput {
     color: rgb(35, 57, 66);
     font-size: 14px;
-    font-family: 'Sanchez', serif;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .titleOfArticle {
@@ -81,13 +78,13 @@ textarea {
 
 .note-btn, .delete {
    background-color: rgb(35, 57, 66);
-    font-family: 'Sanchez', serif;
+    font-family: 'Courier New', Courier, monospace;
     color: white;
 }
 
 #view, #close, #savenote {
     background-color: rgb(35, 57, 66);
-     font-family: 'Sanchez', serif;
+     font-family: 'Courier New', Courier, monospace;
  }
 
  #close {
@@ -96,8 +93,7 @@ textarea {
 
  #bodyinput {
      padding: 20px;
-     font-family: 'Sanchez', serif;
-
+     font-family: 'Courier New', Courier, monospace;
  }
 
  .noteBox {
