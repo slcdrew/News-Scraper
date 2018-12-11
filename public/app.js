@@ -1,5 +1,5 @@
 
-//scrape buttons
+//Handle scrape buttons
 $(".scrape").on("click", function () {
     $.ajax({
         method: "GET",
@@ -10,7 +10,7 @@ $(".scrape").on("click", function () {
     });
 });
 
-//Save button
+//Save article button
 $(".save-btn").on("click", function() {
     var thisId = $(this).attr("data-id");
     $.ajax({
@@ -109,8 +109,6 @@ $(document).on("click", "#view", function() {
         method: "GET",
         url: "/articles/" + thisId,
     })
-    
-    
     //With that done
     .then(function(article) {
         var articleNotes = $(`.${article._id}articleNotes`)
